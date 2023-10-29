@@ -17,11 +17,12 @@ const Qualification = () => {
             <i className="uil uil-graduation-cap qualification__icon"></i>
             Education
           </div>
-          <div className="qualification__button button--flex">
+          <div className="{toggleState=== qualification__button qualification__active button--flex">
             <i className="uil uil-briefcase-alt qualification__icon"></i>
             Experience
           </div>
         </div>
+        <div className="qualification__sections"></div>
 
         <div className="qualification__content"></div>
         <div className="qualification__data">
