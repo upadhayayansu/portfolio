@@ -2,6 +2,9 @@ import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/pp.png";
 import Info from "./Info";
+
+import { HiDocumentDownload } from "react-icons/hi";
+
 const About = () => {
   return (
     <section className="about section" id="about">
@@ -11,12 +14,17 @@ const About = () => {
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
           <Info />
+          <p className="about__description">
+            Frontend developer,I create webpages with UI/UX user interface.
+          </p>
+          <a href="" className="button button--flex">
+            Download CV
+            <HiDocumentDownload
+              size={24}
+              style={{ color: "var(--container-color)" }}
+            />
+          </a>
         </div>
-
-        <p className="about__description">
-          Frontend developer,I create webpages with UI/UX user interface.
-        </p>
-        <a href="" className="button button--flex"></a>
       </div>
     </section>
   );

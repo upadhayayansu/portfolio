@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Services.css";
 
 const Services = () => {
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(0);
 
   const ToggleTab = (index) => {
     setToggleState(index);
@@ -22,7 +22,7 @@ const Services = () => {
             </h3>
           </div>
 
-          <span className="services__button" onClick={() => toggleTab(1)}>
+          <span className="services__button" onClick={() => ToggleTab(1)}>
             View more
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
@@ -40,44 +40,43 @@ const Services = () => {
                 className="uil uil-times  services__modal-close"
               ></i>
 
-              <h3 className="services__modal-title">product Designer</h3>
+              <h3 className="services__modal-title">Visual Designer</h3>
               <p className="services__modal-description">
                 Service around 1 years of experience.Providing quality work to
                 clients and companies.
               </p>
-              <ul className="services__modal-services-grid"></ul>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">
-                  develop the user interface.
-                </p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">WEb page developmt</p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">I create UI element.</p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">
-                  I position your company brand.
-                </p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">
-                  Design and mockups of products for companies
-                </p>
-              </li>
+              <ul className="services__modal-services grid">
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    develop the user interface.
+                  </p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">WEb page developmt</p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">I create UI element.</p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    I position your company brand.
+                  </p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    Design and mockups of products for companies
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="services__container container grid">
         <div className="services__content">
           <div>
             <i className="uil uil-web-grid services__icon"></i>
@@ -87,7 +86,7 @@ const Services = () => {
             </h3>
           </div>
 
-          <span onClick={() => toggleTab(2)} className="services__button">
+          <span onClick={() => ToggleTab(2)} className="services__button">
             View more
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
@@ -95,50 +94,52 @@ const Services = () => {
           <div
             className={
               toggleState === 2
-                ? "serevices__modal active-modal"
+                ? "services__modal active-modal"
                 : "services__modal"
             }
           >
             <div className="services__modal-content">
-              <i className="uil uil-times  services__modal-close"></i>
+              <i
+                onClick={() => ToggleTab(0)}
+                className="uil uil-times  services__modal-close"
+              ></i>
 
-              <h3 className="services__modal-title">ui/Ux Designer</h3>
+              <h3 className="services__modal-title">Visual Designer</h3>
               <p className="services__modal-description">
                 Service around 1 years of experience.Providing quality work to
                 clients and companies.
               </p>
-              <ul className="services__modal-services-grid"></ul>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">
-                  develop the user interface.
-                </p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">WEb page developmt</p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">I create UI element.</p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">
-                  I position your company brand.
-                </p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">
-                  Design and mockups of products for companies
-                </p>
-              </li>
+              <ul className="services__modal-services grid">
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    develop the user interface.
+                  </p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">WEb page developmt</p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">I create UI element.</p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    I position your company brand.
+                  </p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    Design and mockups of products for companies
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-      <div className="services__container container grid">
         <div className="services__content">
           <div>
             <i className="uil uil-web-grid services__icon"></i>
@@ -148,7 +149,7 @@ const Services = () => {
             </h3>
           </div>
 
-          <span onClick={() => toggleTab(3)} className="services__button">
+          <span onClick={() => ToggleTab(3)} className="services__button">
             View more{" "}
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
@@ -162,7 +163,7 @@ const Services = () => {
           >
             <div className="services__modal-content">
               <i
-                onClick={() => toggleTab(0)}
+                onClick={() => ToggleTab(0)}
                 className="uil uil-times  services__modal-close"
               ></i>
 
@@ -171,33 +172,34 @@ const Services = () => {
                 Service around 1 years of experience.Providing quality work to
                 clients and companies.
               </p>
-              <ul className="services__modal-services-grid"></ul>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">
-                  develop the user interface.
-                </p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">WEb page developmt</p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">I create UI element.</p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">
-                  I position your company brand.
-                </p>
-              </li>
-              <li className="services__modal-services">
-                <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">
-                  Design and mockups of products for companies
-                </p>
-              </li>
+              <ul className="services__modal-services grid">
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    develop the user interface.
+                  </p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">WEb page developmt</p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">I create UI element.</p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    I position your company brand.
+                  </p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    Design and mockups of products for companies
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

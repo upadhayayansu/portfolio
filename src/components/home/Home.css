@@ -56,38 +56,40 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 9px rgb(225, 225, 225/30%);
+  box-shadow: inset 0 0 0 9px rgb(225 225 225/30%);
   order: 1;
   justify-self: center;
   width: 300px;
   height: 300px;
-  animation: pp__animate 8s ease-in-out infinite 1s;
+  animation: pp__animate 6s ease-in-out infinite 1s;
 }
 
 @keyframes pp__animate {
   0% {
-    border-radius: 60% 40% 30% 70/60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
   50% {
-    border-radius: 30% 60% 70% 40/50% 60% 30% 60%;
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
 
   100% {
-    border-radius: 60% 40% 30% 70/60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
 .home__scroll {
   margin-left: 9.25rem;
+  overflow: hidden;
 }
 .wheel {
   animation: scroll 2s ease infinite;
 }
 @keyframes scroll {
   0% {
-    transform: transaltely(0);
+    transform: translateY(0px);
   }
   30% {
-    transform: translately(3.75rem);
+    transform: translateY(10px);
   }
 }
 .home__scroll-name {
@@ -100,6 +102,7 @@
   font-size: 1.25rem;
   color: var(--title-color);
 }
+
 /*=======BREAKPOINTS=======*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -125,10 +128,11 @@
     margin-bottom: var(--mb-2-5);
   }
   .home__img {
-    width: 25o;
+    width: 250px;
     height: 250px;
     box-shadow: inset 0 0 0 8px rgb(225, 225, 225/30%);
   }
+
   .home__scroll {
     margin-left: 7.5rem;
   }
@@ -147,7 +151,7 @@
     grid-column: 1/3;
   }
   .home__img {
-    box-shadow: inset 0 0 0 6px rgb(225, 225, 225/30%);
+    box-shadow: inset 0 0 0 6px rgb(225 225 225/30%);
   }
   .home__scroll {
     display: none;
@@ -160,7 +164,7 @@
     width: 180px;
     height: 180px;
   }
-  .home {
+  .home__hand {
     width: 22px;
     height: 22px;
   }
