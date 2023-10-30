@@ -43,6 +43,13 @@ const Contact = () => {
 
               <form className="contact__form">
                 <div className="contact__form-div">
+                  <label className="contact__form-tag">name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    className="contact__form-input"
+                    placeholder="Insert your name"
+                  />
                   <label className="contact__form-tag">Mail</label>
                   <input
                     type="text"
@@ -53,15 +60,35 @@ const Contact = () => {
                 </div>
                 <div className="contact__form-div">
                   <label className="contact__form-tag">Project</label>
-                  <textarea name="Project" cols="30" rows="10"></textarea>
-
-                  <text
-                    type="text"
-                    name="name"
-                    className="contact__form-input"
-                    placeholder="Insert your name"
-                  />
+                  <textarea name="Project" cols="30" rows="10">
+                    <text
+                      type="text"
+                      className="contact__form-input"
+                      placeholder="Write your project"
+                    />
+                  </textarea>
                 </div>
+
+                <button className="button button--flex">
+                  Send Messages
+                  <svg
+                    className="button-icon"
+                    xmlns="http://WWW.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.2199 21.9352c13.0399 21.9352 11.3699 21.1052"
+                      fill="var(--container-color)"
+                    ></path>
+                    <path
+                      d="M10.11 14.7052c9.92005 14.7052 9.73005 14.6352"
+                      fill="var(--container-color)"
+                    ></path>
+                  </svg>
+                </button>
               </form>
             </div>
           </div>
