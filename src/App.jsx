@@ -24,7 +24,7 @@ const App = () => {
         <Testimonials />
         <Contact />
       </main>
-      <footer />
+      <Footer />
       <Scrollup />
     </>
   );
