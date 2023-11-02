@@ -21,6 +21,7 @@ const Testimonials = () => {
       <Swiper
         className="testimonials__container"
         loop={true}
+        autoplay={true}
         grabCursor={true}
         spaceBetween={24}
         pagination={{

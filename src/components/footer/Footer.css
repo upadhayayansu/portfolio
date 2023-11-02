@@ -8,7 +8,7 @@
 
 .footer__title,
 .footer__link {
-  color: var(title-color);
+  color: var(--title-color);
 }
 
 .footer__title {
@@ -57,7 +57,7 @@
 /*=======BREAKPOINTS=======*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-  .footer_-social-link {
+  .footer__social-link {
     padding: 0.25rem;
     border-radius: 0.25rem;
     font-size: 1rem;

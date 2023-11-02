@@ -12,9 +12,10 @@
   margin-bottom: var(--mb-1-5);
 }
 .contact__info {
-  display: grid;
-  row-gap: 1rem;
-  grid-template-columns: 300px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .contact__card {
@@ -22,6 +23,8 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
   text-align: center;
+  min-width: 350px;
+  height: 100%;
 }
 
 .contact__card-icon {
@@ -45,7 +48,7 @@
 }
 
 .contact__button {
-  color: var(text-color);
+  color: var(--text-color);
   font-size: var(--small-font-size);
   display: inlinie-flex;
   align-items: center;
@@ -63,7 +66,7 @@
 }
 
 .contact__form {
-  width: 3060px;
+  width: 100%;
 }
 .contact__form-div {
   position: relative;
@@ -83,6 +86,7 @@
   border-radius: 0.75rem;
   padding: 1.5rem;
   z-index: 1;
+  resize: none;
 }
 
 .contact__form-tag {
@@ -101,6 +105,10 @@
 
 .contact__form-area textarea {
   resize: none;
+}
+
+.contact__content {
+  min-width: 350px;
 }
 
 /*=======BREAKPOINTS=======*/
