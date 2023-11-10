@@ -15,7 +15,9 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Frontend developer,I create webpages with UI/UX user interface.
+            I'm Ansu Upadhayay, a React developer with a passion for crafting
+            interactive web experiences. Let's collaborate and create something
+            exceptional. Explore my portfolio to see my work!
           </p>
           <a href="" className="button button--flex">
             Download CV

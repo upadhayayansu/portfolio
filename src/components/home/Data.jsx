@@ -6,7 +6,7 @@ const Data = () => {
       <h1 className="home__title">Ansu Upadhayay</h1>
       <h3 className="home__subtitle">Visual Designer</h3>
       <p className="home__description">
-        Im very passionate and dedicated to my work.
+        A React developer driven by unwavering passion and dedication.
       </p>
       <a href="#contact" className="button button--flex">
         Say Helllo
