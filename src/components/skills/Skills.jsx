@@ -1,7 +1,6 @@
 import React from "react";
 import "./Skills.css";
 import Frontend from "./frontend";
-import Backend from "./Backend";
 
 const Skills = () => {
   return (
