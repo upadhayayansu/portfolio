@@ -1,5 +1,8 @@
 import React from "react";
 import "./Contact.css";
+import { MdEmail } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebookMessenger } from "react-icons/fa6";
 
 const Contact = () => {
   return (
@@ -12,13 +15,15 @@ const Contact = () => {
           <h3 className="contact__title">Talk to me</h3>
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bxl-messenger-send contact__card-icon"></i>
+              <MdEmail size={22} />
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">user@gmail.com</span>
 
+              <IoLogoWhatsapp size={22} />
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">9811111111</span>
 
+              <FaFacebookMessenger size={22} />
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact__card-data">user.fb123s</span>
 

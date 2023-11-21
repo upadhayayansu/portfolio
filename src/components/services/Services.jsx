@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Services.css";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaFigma } from "react-icons/fa";
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -15,7 +17,7 @@ const Services = () => {
       <div className="services__container container grid">
         <div className="services__content">
           <div>
-            <i className="uil uil-web-grid services__icon"></i>
+            <IoLogoJavascript size={42} />
             <h3 className="services__title">
               Frontend
               <br />
@@ -87,7 +89,7 @@ const Services = () => {
 
         <div className="services__content">
           <div>
-            <i className="uil uil-web-grid services__icon"></i>
+            <FaFigma size={42} />
             <h3 className="services__title">
               Ui/Ux <br />
               Designer

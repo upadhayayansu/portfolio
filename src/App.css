@@ -82,6 +82,7 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -157,8 +158,9 @@ img {
 /* For large devices */
 @media screen and (max-width: 992px) {
   .container {
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0vw 5vw;
   }
   .button {
     padding: 1rem 1.75rem;
@@ -167,6 +169,11 @@ img {
     width: 22px;
     height: 22px;
   }
+
+  .button__flex {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* For medium devices */
 @media screen and (max-width: 768px) {
@@ -174,7 +181,7 @@ img {
     margin: 0 0 var(--header-height) 0;
   }
   .section__subtitle {
-    margin-bottom: var(---mb-3);
+    margin-bottom: var(--mb-3);
   }
 }
 
@@ -186,7 +193,7 @@ img {
     --big-font-size: 2.25rem;
   }
   .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
+    margin-left: auto;
+    margin-right: auto;
   }
 }

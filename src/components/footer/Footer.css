@@ -40,6 +40,11 @@
   padding: 0.4rem;
   border-radius: 0.5rem;
   display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
 }
 
 .footer__social-link:hover {

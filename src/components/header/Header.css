@@ -40,6 +40,10 @@
   display: none;
 }
 
+.nav__link > svg {
+  display: none;
+}
+
 /* Active link*/
 .active-link,
 .nav__link:hover {
@@ -105,6 +109,10 @@
   .nav__close,
   .nav__toggle {
     display: block;
+  }
+
+  .nav__link > svg {
+    display: unset;
   }
 }
 

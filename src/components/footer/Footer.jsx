@@ -52,10 +52,6 @@ const Footer = () => {
             <i className="uil uil-twitter"></i>
           </a>
         </div>
-
-        <span className="footer__copy">
-          &#169;Crypticalcoder,All rights reserved
-        </span>
       </div>
     </footer>
   );

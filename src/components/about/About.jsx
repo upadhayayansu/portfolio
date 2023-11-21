@@ -15,11 +15,11 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            I'm Ansu Upadhayay, a React developer with a passion for crafting
-            interactive web experiences. Let's collaborate and create something
-            exceptional. Explore my portfolio to see my work!
+            {`I'm Ansu Upadhayay, a React developer with a passion for crafting
+              interactive web experiences. Let's collaborate and create something
+              exceptional. Explore my portfolio to see my work!`}
           </p>
-          <a href="" className="button button--flex">
+          <a href="" className="button button__flex">
             Download CV
             <HiDocumentDownload
               size={24}

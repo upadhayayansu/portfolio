@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Header.css";
+import { IoHome } from "react-icons/io5";
+import { SiAboutdotme } from "react-icons/si";
+import { RiContactsBookLine, RiCustomerService2Line } from "react-icons/ri";
 
 const Header = () => {
   /*=======Change Background Header=======*/
@@ -30,7 +33,7 @@ const Header = () => {
                   activeNav === "#home" ? "nav__link active-link" : "nav__link "
                 }
               >
-                <i className="uil uil-estate nav__icon"></i>Home
+                <IoHome size={28} /> Home
               </a>
             </li>
 
@@ -44,7 +47,8 @@ const Header = () => {
                     : "nav__link "
                 }
               >
-                <i className="uil uil-estate nav__icon"></i>About
+                <SiAboutdotme size={28} />
+                About
               </a>
             </li>
 
@@ -72,7 +76,8 @@ const Header = () => {
                     : "nav__link "
                 }
               >
-                <i className="uil uil-estate nav__icon"></i>Services
+                <RiCustomerService2Line size={28} />
+                Services
               </a>
             </li>
 
@@ -100,7 +105,8 @@ const Header = () => {
                     : "nav__link "
                 }
               >
-                <i className="uil uil-estate nav__icon"></i>Contact
+                <RiContactsBookLine size={28} />
+                Contact
               </a>
             </li>
           </ul>
