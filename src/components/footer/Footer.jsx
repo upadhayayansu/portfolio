@@ -18,16 +18,10 @@ const Footer = () => {
               Projects
             </a>
           </li>
-
-          <li>
-            <a href="#testimonials" className="footer__link">
-              Testimonials
-            </a>
-          </li>
         </ul>
         <div className="footer__social">
           <a
-            href="https://WWW.facebook.com/"
+            href="https://www.facebook.com/ansu.upadhayay.96/"
             className="footer__social-link"
             target="_blank"
             rel="noreferrer "
@@ -36,7 +30,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://WWW.instagram.com/"
+            href="https://www.instagram.com/ansu_upadhayay/"
             className="footer__social-link"
             target="_blank"
             rel="noreferrer "
@@ -44,12 +38,12 @@ const Footer = () => {
             <i className="uil uil-instagram"></i>
           </a>
           <a
-            href="https://WWW.twitter.com/"
+            href="https://www.linkedin.com/in/ansu-upadhayay-6520b2258/"
             className="footer__social-link"
             target="_blank"
             rel="noreferrer "
           >
-            <i className="uil uil-twitter"></i>
+            <i className="bx bxl-linkedin-square"></i>
           </a>
         </div>
       </div>

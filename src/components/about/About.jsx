@@ -19,7 +19,7 @@ const About = () => {
               interactive web experiences. Let's collaborate and create something
               exceptional. Explore my portfolio to see my work!`}
           </p>
-          <a href="" className="button button__flex">
+          <a href="/cv.pdf" target="_blank" className="button button__flex">
             Download CV
             <HiDocumentDownload
               size={24}

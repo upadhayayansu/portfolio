@@ -17,17 +17,22 @@ const Contact = () => {
             <div className="contact__card">
               <MdEmail size={22} />
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">user@gmail.com</span>
+              <span className="contact__card-data">
+                upadhayayansu8@gmail.com
+              </span>
 
               <IoLogoWhatsapp size={22} />
               <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-data">9811111111</span>
+              <span className="contact__card-data">9841743594</span>
 
               <FaFacebookMessenger size={22} />
               <h3 className="contact__card-title">Messenger</h3>
-              <span className="contact__card-data">user.fb123s</span>
+              <span className="contact__card-data">ansu.upadhayay.96</span>
 
-              <a href="mailto:exampleemail.com" className="contact__button">
+              <a
+                href="mailto:upadhayayansu8@gmail.com"
+                className="contact__button"
+              >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
