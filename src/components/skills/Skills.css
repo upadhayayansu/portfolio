@@ -8,13 +8,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .skills__container {
   /* grid-template-columns: repeat(2, 350px); */
   /* column-gap: 3rem; */
   display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -74,7 +76,7 @@
     grid-template-columns: 1fr;
   }
   .skills__content {
-    padding: 1.5rem;
+    padding: 3rem;
   }
 }
 
