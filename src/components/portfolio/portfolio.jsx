@@ -12,22 +12,22 @@ const Portfolio = () => {
         <Project
           img="/framermotion.png"
           title="Framer Motion-NFT"
-          tags={["React", "Framer Motion"]}
-          desc="Bloggy is a blog web app developed in MERN stack. It contains user login and register logic where user can write and post blogs."
+          tags={["TS", "Next", "Framer Motion"]}
+          desc="Framer Motion-NFT is a NFT project made using framer. The project showcases my skills and understanding animations."
           link="https://framer-motion-nft.netlify.app/"
         />
         <Project
           img="/filtering.png"
           title="Ecommerce Filtering System"
           tags={["JS", "React"]}
-          desc="Bloggy is a blog web app developed in MERN stack. It contains user login and register logic where user can write and post blogs."
+          desc="Part of an Ecommerce project which will filter the data and displays expected results."
           link="https://filtering-sys.netlify.app/"
         />
         <Project
           img="/portfolio.png"
           title="Portfolio"
           tags={["React", "Portfolio"]}
-          desc="Bloggy is a blog web app developed in MERN stack. It contains user login and register logic where user can write and post blogs."
+          desc="Portfolio Showcasing my skills and experience in web development."
           link="https://courageous-moonbeam-8a6d47.netlify.app/"
         />
       </div>
