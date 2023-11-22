@@ -1,0 +1,12 @@
+.portfolio__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .tags-container {
+    display: flex;
+    gap: 5px;
+  }
+  

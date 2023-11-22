@@ -9,7 +9,13 @@ const Project = (props) => {
           <img src={props.img} alt="rover" />
         </div>
         <div className="cardBody">
-          <span className="tag tagTeal">{props.tags}</span>
+          <div className="tags-container">
+            {props.tags.map((item, index) => (
+              <span key={index} className="tag tagTeal">
+                {item}
+              </span>
+            ))}
+          </div>
           <h4>{props.title}</h4>
           <p>{props.desc}</p>
           <a
